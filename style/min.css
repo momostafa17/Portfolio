@@ -122,6 +122,12 @@ a {
   display: flex;
   gap: 20px;
 }
+.header .container ul a {
+  transition: var(--min-transition);
+}
+.header .container ul a:hover {
+  color: #a6bbcc;
+}
 .header .container a i {
   font-size: 25px;
 }
@@ -143,21 +149,20 @@ a {
 }
 .min_section .container .text p {
   font-size: 20px;
-  line-height: 2;
 }
 .min_section .container .text p span {
   font-weight: bold;
   font-size: 6rem;
   color: var(--min-color);
   font-family: sans-serif;
-  line-height: 1;
-  letter-spacing: -1.5px;
-  margin: 1rem 0;
+  display: block;
+  padding-bottom: 1.5rem;
 }
 .min_section .container .text p a {
   font-size: 24px;
   border-bottom: solid 4px var(--min-color);
   padding: 10px 0 5px 0;
+  width: fit-content;
 }
 .min_section .container .text p i {
   font-size: 20px;
@@ -418,12 +423,10 @@ footer .links i {
 section {
   transition: all 0.6s ease;
 }
-
 .hide {
   opacity: 0;
   transform: translateY(40px);
 }
-
 .show {
   opacity: 1;
   transform: translateY(0);
